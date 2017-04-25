@@ -75,7 +75,7 @@ class SoapAdapter implements AdapterInterface
         $this->prepareSoapHeader('http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Wyloguj', $this->address);
         $result = $this->client->Wyloguj(array(
             RegonConstantsInterface::PARAM_SESSION_ID => $sid
-        );
+        ));
 
         return $result->WylogujResult;
     }
@@ -109,7 +109,7 @@ class SoapAdapter implements AdapterInterface
         $result = $this->client->DanePobierzPelnyRaport(array(
             RegonConstantsInterface::PARAM_REGON => $regon,
             RegonConstantsInterface::PARAM_REPORT_NAME => $reportType
-        );
+        ));
 
         try {
             $result = $this->decodeResponse($result->DanePobierzPelnyRaportResult);

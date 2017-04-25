@@ -159,7 +159,7 @@ class GusApi
     {
         return $this->search($sid, array(
             RegonConstantsInterface::SEARCH_TYPE_REGON => $regon
-        );
+        ));
     }
 
     /**
@@ -174,7 +174,7 @@ class GusApi
     {
         return $this->search($sid, array(
             RegonConstantsInterface::SEARCH_TYPE_KRS => $krs
-        );
+        ));
     }
 
     /**
