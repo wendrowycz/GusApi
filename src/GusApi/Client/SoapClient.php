@@ -52,9 +52,9 @@ class SoapClient extends \SoapClient
      */
     public function __setHttpHeader(array $header)
     {
-        $this->setContextOption([
+        $this->setContextOption(array(
             'http' => $header
-        ]);
+        ));
     }
 
     /**

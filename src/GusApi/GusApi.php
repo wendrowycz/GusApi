@@ -149,9 +149,9 @@ class GusApi
      */
     public function getByNip($sid, $nip)
     {
-        return $this->search($sid, [
+        return $this->search($sid, array(
             RegonConstantsInterface::SEARCH_TYPE_NIP => $nip
-        ]);
+        ));
     }
 
     /**
@@ -164,9 +164,9 @@ class GusApi
      */
     public function getByRegon($sid, $regon)
     {
-        return $this->search($sid, [
+        return $this->search($sid, array(
             RegonConstantsInterface::SEARCH_TYPE_REGON => $regon
-        ]);
+        ));
     }
 
     /**
@@ -179,9 +179,9 @@ class GusApi
      */
     public function getByKrs($sid, $krs)
     {
-        return $this->search($sid, [
+        return $this->search($sid, array(
             RegonConstantsInterface::SEARCH_TYPE_KRS => $krs
-        ]);
+        ));
     }
 
     /**
