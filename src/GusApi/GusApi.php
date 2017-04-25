@@ -242,7 +242,7 @@ class GusApi
      */
     private function search($sid, array $searchData)
     {
-        $result = [];
+        $result = array();
         try{
             $response = $this->adapter->search($sid, $searchData);
         } catch (NoDataException $e) {
